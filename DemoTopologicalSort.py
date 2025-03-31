@@ -1,8 +1,8 @@
 from GraphVariant1 import Graph
-#pregunta 1 de la practica
+
 def run_grafo_1():
     print("\nGRAFO 1 - Topological Sort")
-    g = Graph()
+    g = Graph(6)  # Vértices: 0,1,2,3,4,5
     g.addEdge('0', '4')
     g.addEdge('1', '4')
     g.addEdge('2', '4')
@@ -12,7 +12,7 @@ def run_grafo_1():
 
 def run_grafo_2():
     print("\nGRAFO 2 - Topological Sort")
-    g = Graph()
+    g = Graph(5)  # Vértices: A, B, C, D, E
     g.addEdge('A', 'B')
     g.addEdge('A', 'C')
     g.addEdge('A', 'E')
@@ -22,7 +22,7 @@ def run_grafo_2():
 
 def run_grafo_3():
     print("\nGRAFO 3 - Topological Sort")
-    g = Graph()
+    g = Graph(7)  # Vértices: a, b, t, m, g, k, s
     g.addEdge('a', 'b')
     g.addEdge('b', 't')
     g.addEdge('b', 'm')

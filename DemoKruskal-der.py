@@ -14,7 +14,7 @@ def graficar_grafo_dirigido():
     pos = {'a': (0, 1), 'b': (1, 2), 'c': (1, 0), 'd': (2, 1)}
     plt.figure(figsize=(6, 4))
     nx.draw(G, pos, with_labels=True, arrows=True, node_color='skyblue', node_size=800, font_weight='bold')
-    plt.title("Grafo Dirigido - Imagen Derecha")
+    plt.title("Grafo Dirigido")
     plt.axis('off')
     plt.show()
 
@@ -26,11 +26,9 @@ def main():
     g.addEdge(1, 3)  # b → d
     g.addEdge(2, 3)  # c → d
 
-    print("Ordenamiento topológico del grafo:")
-    g.topologicalSort()
+    g.topologicalSort()  # Imprimir ordenamiento topológico
 
-    # Graficar
-    graficar_grafo_dirigido()
+    graficar_grafo_dirigido()  # Mostrar gráfico del grafo
 
 if __name__ == "__main__":
     main()
